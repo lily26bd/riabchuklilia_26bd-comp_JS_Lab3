@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Конвертор доларів у біткоїни</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .editable {
+    border: 1px dashed #ccc;
+    padding: 5px;
+    min-width: 200px;
+  }
+  button {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<h1 id="header">Конвертер валюти: USD → BTC</h1>
+<button id="editTitleBtn">Редагувати заголовок</button>
+
+<div>
+  <label for="rateInput">Поточний курс Біткоїна (USD):</label>
+  <span id="rateDisplay">30000</span> USD
+  <button id="editRateBtn">Редагувати курс</button>
+</div>
+
+<div>
+  <label for="amountInput">Сума в доларах (USD):</label>
+  <span id="amountDisplay">1000</span> USD
+  <button id="editAmountBtn">Редагувати суму</button>
+</div>
+
+<div id="result">
+  <p>Можна купити: <strong id="btcAmount">0</strong> BTC</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
